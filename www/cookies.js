@@ -43,4 +43,15 @@ Cookies.prototype.clear = function(successCallback, errorCallback) {
     exec(successCallback, errorCallback, "Cookies", "clear", []);
 };
 
+
+/**
+ * Set the CookiePolicy to Always
+ *
+ * @param {Function} successCallback The function to call when cookies cleared successfully
+ * @param {Function} errorCallback The function to call when there was an error (OPTIONAL)
+ */
+Cookies.prototype.always = function(successCallback, errorCallback) {
+    exec(successCallback, errorCallback, "Cookies", "always", []);
+};
+
 module.exports = new Cookies();
